@@ -1,78 +1,119 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI随行摄影师 · 支持</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mola Cam / Mola相机 - Support</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
-      background: #FBF6EE;
-      color: #3A3A3A;
-      padding: 40px 20px;
-    }
-    .container { max-width: 640px; margin: 0 auto; }
-    h1 { font-size: 26px; color: #C8924F; margin-bottom: 6px; }
-    .subtitle { font-size: 14px; color: #7A6A55; margin-bottom: 36px; }
-    h2 { font-size: 17px; color: #5A4B38; margin: 28px 0 10px; }
-    p, li { font-size: 15px; line-height: 1.8; color: #4A4A4A; }
-    ul { padding-left: 20px; }
-    a { color: #C8924F; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .contact-box {
-      background: #fff;
-      border: 1px solid #E8D5B8;
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin-top: 12px;
-    }
-    footer {
-      margin-top: 48px;
-      font-size: 12px;
-      color: #A89580;
-      text-align: center;
-    }
+    :root { --bg:#fbf6ee; --card:#fffaf2; --text:#1c1712; --muted:#6f5a3f; --accent:#c8924f; --line:rgba(200,146,79,.28); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; color:var(--text); background:radial-gradient(circle at top,#fff6e6 0%,var(--bg) 48%,#f7ecdc 100%); line-height:1.68; }
+    .wrap { max-width:920px; margin:0 auto; padding:38px 18px 72px; }
+    .hero { padding:34px 26px; border:1px solid var(--line); border-radius:26px; background:rgba(255,250,242,.88); box-shadow:0 22px 70px rgba(72,45,14,.10); }
+    .brand { display:inline-flex; align-items:center; gap:8px; color:#fff; background:var(--accent); border-radius:999px; padding:8px 14px; font-size:.92rem; }
+    h1 { margin:16px 0 10px; font-size:2.25rem; letter-spacing:-.03em; }
+    h2 { margin:0 0 12px; font-size:1.24rem; }
+    h3 { margin:18px 0 8px; font-size:1.02rem; }
+    p, ul { margin:0 0 12px; }
+    ul { padding-left:1.25rem; }
+    li { margin:6px 0; }
+    .muted, footer { color:var(--muted); }
+    .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+    .button { display:inline-block; padding:10px 15px; border-radius:999px; text-decoration:none; border:1px solid var(--line); color:#8b5b1e; background:#fffdf8; }
+    .button.primary { color:#fff; background:var(--accent); border-color:var(--accent); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:18px; }
+    section, .card { padding:22px 24px; border:1px solid var(--line); border-radius:22px; background:var(--card); }
+    section { margin-top:18px; }
+    a { color:#9e6a24; }
+    .notice { border-left:4px solid var(--accent); padding:12px 14px; background:rgba(200,146,79,.1); border-radius:0 12px 12px 0; }
+    footer { margin-top:26px; padding-top:18px; border-top:1px solid var(--line); font-size:.92rem; }
+    @media (max-width:720px) { .grid { grid-template-columns:1fr; } h1 { font-size:1.85rem; } }
   </style>
 </head>
 <body>
-  <div class="container">
-
-    <h1>AI随行摄影师</h1>
-    <p class="subtitle">技术支持 · Support Page</p>
-
-    <h2>📌 应用简介</h2>
-    <p>AI随行摄影师是一款 iOS 摄影辅助应用，提供 AI 拍摄方案构思、实时姿态引导、智能修图，以及照片广场社交功能。</p>
-
-    <h2>❓ 常见问题</h2>
-    <ul>
-      <li><strong>手机验证码收不到？</strong><br>
-        请确认手机号输入正确，并检查是否被运营商拦截为垃圾短信。等待 60 秒后可点击「重新发送」。</li>
-      <li><strong>AI 构思一直转圈 / 无法连接？</strong><br>
-        请检查网络连接，稍后重试。在弱网或切换 Wi-Fi 时偶有延迟，属正常现象。</li>
-      <li><strong>积分如何获得？</strong><br>
-        新用户注册可获赠初始积分；也可在「我的 → 积分充值」通过应用内购买获取。</li>
-      <li><strong>购买积分未到账？</strong><br>
-        请稍等片刻后重启应用。若超过 30 分钟仍未到账，请联系我们并附上 Apple 购买凭证（收据截图）。</li>
-      <li><strong>照片或视频未保存到相册？</strong><br>
-        请前往「设置 → 隐私与安全 → 照片」，确认 AI随行摄影师 已获得相册写入权限。</li>
-      <li><strong>如何删除账号和数据？</strong><br>
-        可在应用内「设置 → 账号 → 注销账号」操作，我们将在 7 个工作日内删除你的全部数据。</li>
-    </ul>
-
-    <h2>📬 联系我们</h2>
-    <div class="contact-box">
-      <p>如遇到以上未列出的问题，欢迎发邮件联系，我们会在 1–3 个工作日内回复。</p>
-      <p style="margin-top:12px;">📧 <a href="mailto:3915849@163.com">3915849@163.com</a></p>
+  <main class="wrap">
+    <div class="hero">
+      <span class="brand">Mola Cam / Mola相机</span>
+      <h1>Support & Legal Information<br />支持与法律信息</h1>
+      <p class="muted">Last Updated / 最近更新：2026 年 6 月 13 日</p>
+      <p>Mola Cam is an AI-assisted camera app that provides camera shooting assistance, real-time photographic styles, optional cloud AI shooting analysis and guidance, photo review, and caption generation.</p>
+      <p>Mola相机是一款 AI 辅助相机应用，提供相机拍摄辅助、实时调色风格、可选的云端 AI 拍摄分析与引导、照片点评和文案生成等功能。</p>
+      <div class="actions">
+        <a class="button primary" href="docs/privacy.html">Privacy Policy / 隐私政策</a>
+        <a class="button" href="#terms">Terms of Service / 用户协议</a>
+        <a class="button" href="mailto:3915849@163.com">Contact Support / 联系客服</a>
+      </div>
     </div>
 
-    <h2>🔒 隐私政策</h2>
-    <p>我们重视你的隐私。应用仅在功能需要时请求相机、相册、麦克风等权限，不会在未经授权的情况下收集或分享你的个人信息。</p>
-    <p>如需查阅完整隐私政策，请发邮件索取，或访问：
-      <a href="privacy.html">隐私政策页面</a>
-    </p>
+    <div class="grid">
+      <div class="card">
+        <h2>Support / 客服支持</h2>
+        <p>If you have questions, bug reports, refund-related questions, or privacy requests, please contact us by email.</p>
+        <p>如您有使用问题、故障反馈、退款相关问题或隐私请求，请通过邮件联系我们。</p>
+        <p><strong>Email / 邮箱：</strong><a href="mailto:3915849@163.com">3915849@163.com</a></p>
+      </div>
 
-    <footer>© 2026 Wilson Peng · AI随行摄影师</footer>
-  </div>
+      <div class="card">
+        <h2>Account Status / 账号功能状态</h2>
+        <p>The current version does not provide phone-number login, account registration, public community publishing, comments, following, or public profile features.</p>
+        <p>当前版本不提供手机号登录、账号注册、广场/社区发布、评论、关注或公开个人主页功能。</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>App Features / 应用功能</h2>
+      <ul>
+        <li>Camera shooting assistance and live preview / 相机拍摄辅助与实时取景。</li>
+        <li>Real-time photographic styles and color palette / 实时调色风格与调色盘。</li>
+        <li>Optional AI Assist for composition, lighting, and shooting guidance / 可选 AI 辅助构图、光线与拍摄引导。</li>
+        <li>On-device image processing such as light enhancement, denoise, and beauty effects / 设备端补光、降噪、人像美化等图像处理。</li>
+        <li>Optional caption generation for photos / 可选的照片朋友圈文案生成。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Privacy Summary / 隐私摘要</h2>
+      <div class="notice">
+        <p>We do not operate phone login or a public community in the current version. We do not collect, upload, or store biometric identifiers such as face templates, depth maps, or facial geometry meshes.</p>
+        <p>当前版本不运营手机号登录和公开社区。本应用不收集、不上传、不存储人脸模板、深度图或面部几何网格等可用于识别个人身份的生物特征数据。</p>
+      </div>
+      <p>Some optional AI features may transmit the selected photo and related prompt text to a third-party AI service over HTTPS with your consent. Please read the full Privacy Policy for details.</p>
+      <p>部分可选 AI 功能会在征得您同意后，通过 HTTPS 将所选照片及相关提示文本传输至第三方 AI 服务。详情请阅读完整隐私政策。</p>
+    </section>
+
+    <section id="terms">
+      <h2>Terms of Service / 用户协议</h2>
+
+      <h3>English</h3>
+      <p><strong>App Name:</strong> Mola Camera (Mola相机)</p>
+      <p><strong>Effective Date:</strong> April 30, 2026<br /><strong>Last Updated:</strong> June 13, 2026</p>
+      <p>Welcome to Mola Cam. Please read these Terms carefully before using the app. By tapping Agree or continuing to use the app, you confirm that you have read and agree to be bound by these Terms.</p>
+      <p><strong>1. Service Description.</strong> This app provides camera shooting assistance, on-device image processing, real-time photographic styles, optional cloud AI shooting analysis and guidance, photo review, and caption generation. The app currently does not provide phone-number login, account registration, Square/community publishing, comments, following, or public profile features.</p>
+      <p><strong>2. Usage Rules.</strong> You may use the app without registering or logging in. You may not use this app to create, copy, or distribute content prohibited by law or regulations, or to infringe upon others' intellectual property, portrait rights, privacy, or other lawful rights. You are responsible for the photos, text, prompts, and other content you create, process, save, or share outside the app.</p>
+      <p><strong>3. AI and Third-Party Services.</strong> When you voluntarily use cloud AI features, we transmit, with your consent, images and related prompt text involved in that session to a third-party AI provider via HTTPS encryption to obtain analysis and text suggestions. AI results are for reference only and may be inaccurate or unsuitable for some scenes. For details on face data, image transmission scope, and personal information, please refer to our full Privacy Policy.</p>
+      <p><strong>4. Credits and Purchases.</strong> Some AI features may consume virtual credits. AI Assist is currently priced at 1 credit per use, subject to the latest in-app display. Purchases are processed through Apple In-App Purchase, and refund or billing issues are subject to Apple's applicable rules. Credits are virtual items for use within this app only and have no cash value.</p>
+      <p><strong>5. Intellectual Property.</strong> The interface design, marks, software, and documentation of this app are protected by law. Without authorization, you may not reverse-engineer, crack, or distribute the software beyond the scope of your license. Photos and other original content you create belong to you or the applicable rights holder under applicable law, provided they do not infringe any third-party rights.</p>
+      <p><strong>6. Disclaimers.</strong> AI analysis results and shooting suggestions are for assistance only and do not constitute professional advice. To the extent permitted by law, we are not liable for indirect or punitive damages arising from force majeure, network or telecom service issues, third-party services, or device issues, but we will make reasonable efforts to assist. Some data, such as virtual credits, may rely on local storage and Apple iCloud key-value storage. Device settings, Apple ID status, or system restrictions may affect synchronization.</p>
+      <p><strong>7. Amendments.</strong> We may revise these Terms based on applicable laws or business requirements and will provide notice within the app or by other reasonable means. Continued use after revision constitutes acceptance. If you do not agree, please stop using the app.</p>
+      <p><strong>8. Contact Us.</strong> Questions or complaints: <a href="mailto:3915849@163.com">3915849@163.com</a></p>
+
+      <h3>中文</h3>
+      <p><strong>应用名称：</strong>Mola相机</p>
+      <p><strong>生效日期：</strong>2026 年 4 月 30 日<br /><strong>最近更新：</strong>2026 年 6 月 13 日</p>
+      <p>欢迎使用 Mola相机。请在使用前仔细阅读本协议。您点击同意或继续使用本应用，即表示您已阅读并同意受本协议约束。</p>
+      <p><strong>一、服务说明。</strong>本应用向您提供相机拍摄辅助、设备端图像处理、实时调色风格、可选的云端 AI 拍摄分析与引导、照片点评和文案生成等功能。本应用当前不提供手机号登录、账号注册、广场/社区发布、评论、关注或公开个人主页功能。</p>
+      <p><strong>二、使用规范。</strong>您无需注册或登录即可使用本应用。您不得利用本应用制作、复制、传播含有法律、行政法规禁止的内容，不得侵犯他人知识产权、肖像权、隐私权等合法权益。您应对您创建、处理、保存或在应用外分享的照片、文字、提示词等内容自行承担责任。</p>
+      <p><strong>三、AI 与第三方服务。</strong>当您主动使用云端 AI 功能时，我们会在征得您同意后，将该次功能涉及的图像及相关提示文本通过 HTTPS 加密传输至第三方 AI 服务提供方，用于获取分析与文字建议。AI 结果仅供参考，可能存在不准确或不适用于特定场景的情况。与人脸数据、图像传输范围及个人信息的详细说明，以《隐私政策》全文为准。</p>
+      <p><strong>四、积分与购买。</strong>部分 AI 功能可能消耗虚拟积分。AI 辅助当前为每次 1 积分，具体以应用内最新展示为准。购买通过 Apple 应用内购买完成，退款及账单问题适用 Apple 的相关规则。积分仅可在本应用内使用，不具有现金价值。</p>
+      <p><strong>五、知识产权。</strong>本应用的界面设计、标识、软件及文档等受法律保护；未经权利人许可，您不得对软件实施反向工程、破解或超出授权范围的传播、商用。您创作的照片及其他原创内容，知识产权依法归您或相应权利人享有，但您应保证不侵害他人权利。</p>
+      <p><strong>六、免责声明。</strong>AI 的分析结果与拍摄建议仅供辅助参考，不构成专业意见。因不可抗力、网络或电信服务、第三方服务、终端设备等造成的中断、延迟或异常，在法律允许范围内，我们不承担间接或惩罚性赔偿责任，但将尽力提供合理协助。虚拟积分等数据可能依赖本地存储与 Apple iCloud 键值存储，设备设置、Apple ID 状态或系统限制可能影响同步效果。</p>
+      <p><strong>七、协议变更。</strong>我们可根据法规与业务情况修订本协议，并在应用内或以其他合理方式提示。修订后您继续使用即视为接受；若您不同意，请停止使用本应用。</p>
+      <p><strong>八、联系我们。</strong>如有疑问或投诉，请发送邮件至：<a href="mailto:3915849@163.com">3915849@163.com</a></p>
+    </section>
+
+    <footer>
+      <p>© 2026 Mola Cam / Mola相机. Support: <a href="mailto:3915849@163.com">3915849@163.com</a></p>
+    </footer>
+  </main>
 </body>
 </html>
