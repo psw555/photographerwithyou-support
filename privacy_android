@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mola相机 隐私政策</title>
+<style>
+  :root { --ink:#2b2b2b; --muted:#8a8a8a; --gold:#8a6d2f; --line:#ececec; --bg:#fdfbf7; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.85;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 22px 80px; }
+  header { text-align: center; padding-bottom: 28px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+  h1 { font-size: 26px; margin: 0 0 14px; letter-spacing: 1px; }
+  .meta { color: var(--muted); font-size: 13px; line-height: 1.9; }
+  .meta span { display: inline-block; margin: 0 8px; }
+  h2 {
+    font-size: 18px; margin: 38px 0 12px; padding-left: 12px;
+    border-left: 4px solid var(--gold); color: #1f1f1f;
+  }
+  p { margin: 12px 0; }
+  .lead { color: #444; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  .bullet-title { font-weight: 600; }
+  .contact { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin-top: 16px; }
+  .contact p { margin: 6px 0; }
+  footer { margin-top: 48px; text-align: center; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 24px; }
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>隐私政策</h1>
+    <div class="meta">
+      <span>应用名称：Mola相机</span><br>
+      <span>运营主体：上海视界象限科技有限公司</span><br>
+      <span>生效日期：2026 年 7 月 2 日</span>
+      <span>最近更新：2026 年 7 月 5 日</span>
+    </div>
+  </header>
+
+  <p class="lead">欢迎使用 Mola相机。本应用由上海视界象限科技有限公司开发运营。我们重视您的隐私与安全。本政策说明我们如何收集、使用、存储与共享与您相关的信息。使用本应用即表示您理解并同意本政策；若您不同意，请停止使用本应用。</p>
+
+  <h2>一、当前账号与社区功能状态</h2>
+  <p>本应用当前不提供手机号登录、账号注册、广场/社区发布、评论、关注或公开个人主页功能。我们不会要求您提供手机号用于登录，也不会在应用内运营向其他用户公开展示您照片或文字的社区功能。</p>
+
+  <h2>二、我们收集哪些信息</h2>
+  <p><span class="bullet-title">1. 您在使用中产生的内容</span></p>
+  <ul>
+    <li>照片：您通过相机拍摄或选择用于处理、文案生成或保存的内容。</li>
+    <li>文本：您输入的拍摄意图、AI 提示词、朋友圈文案及其他您主动输入的文字。</li>
+  </ul>
+  <p><span class="bullet-title">2. 设备与日志</span></p>
+  <ul>
+    <li>为保障服务质量与安全，我们可能收集与设备相关的非精确信息（如系统版本、崩溃日志等），不包含您的通讯录、短信内容或通话记录。</li>
+  </ul>
+  <p><span class="bullet-title">3. 应用内购买</span></p>
+  <ul>
+    <li>若未来提供会员等应用内购买，支付将通过应用内支付渠道（如支付宝、微信支付）完成；我们不会接收您的完整银行卡号。</li>
+  </ul>
+
+  <h2>三、人脸数据（Face Data）</h2>
+  <p>本应用不收集、不上传、不存储可用于识别您个人的生物特征数据（如人脸模板、深度图、面部几何网格等）。</p>
+  <p>为实现仅在设备端完成的取景引导与人像相关功能，我们可能使用系统提供的设备端人脸检测能力，在内存中获得人脸在画面中的大致位置（边界框），用于定位局部处理范围。该过程在您的手机上完成，人脸检测结果不会传输至我们的服务器。</p>
+  <p>人脸相关数据不会用于身份识别、用户画像、广告定向或与拍摄辅助无关的任何目的。设备端人脸检测产生的中间数据仅驻留在内存中，在处理完成后即被释放，不做持久化存储。</p>
+
+  <h2>四、第三方 AI 服务（图像传输与用途）</h2>
+  <p>当您主动使用 AI 拍照分析、AI 辅助、文案生成或风格引导等功能时，我们会将该次功能涉及的图像通过 HTTPS 加密传输至第三方 AI 服务，用于生成文字建议或分析结果。</p>
+  <ul>
+    <li>服务提供方：当前为国内大模型服务商（包括但不限于阶跃星辰、阿里云通义千问 DashScope、火山引擎豆包）。</li>
+    <li>传输内容：主要为您拍摄或选择用于分析的静态照片以及相关提示文本。我们不会传输您的通讯录、短信内容或与该功能无关的文件。</li>
+    <li>本应用的目的：获取拍摄引导、构图与光线建议或社交文案建议，并在应用内展示给您。</li>
+    <li>您的控制：不使用 AI 功能时，相关云端分析不会执行；您仍可使用不依赖该服务的本地拍摄与基础功能。</li>
+  </ul>
+  <p>服务方对传输数据的具体处理方式可能随其官方规则更新而变化，请查阅其最新公示文件。</p>
+
+  <h2>五、权限说明</h2>
+  <ul>
+    <li>相机：拍摄照片与实时取景。</li>
+    <li>相册/媒体：保存作品、读取您选择的照片。</li>
+    <li>麦克风 / 语音识别（若启用）：语音意图输入与转文字。</li>
+    <li>位置（若您授权）：可为照片记录拍摄地点；若您拒绝，不影响核心拍摄与 AI 分析功能。</li>
+  </ul>
+
+  <h2>六、存储与安全</h2>
+  <ul>
+    <li>我们使用业界常见措施保护传输安全（如 HTTPS）。</li>
+    <li>您的偏好设置与滤镜选择等仅存储在设备本地。</li>
+    <li>照片仅在您主动拍摄保存时写入您的本地相册。</li>
+  </ul>
+
+  <h2>七、未成年人</h2>
+  <p>若您未满当地法律规定的年龄，请在监护人同意与指导下使用本应用。我们不以未成年人为主要受众主动收集超出服务必要的信息。</p>
+
+  <h2>八、您的权利</h2>
+  <p>在适用法律允许的范围内，您可请求访问、更正、删除与您使用本应用相关的信息，或限制某些处理。由于本应用当前不提供账号登录，部分数据可能仅存在于您的设备、手机系统或第三方 AI 服务的当次处理流程中。</p>
+
+  <h2>九、政策变更</h2>
+  <p>我们可能适时修订本政策，并在本应用内更新展示内容及生效日期。重大变更时，我们将通过应用内提示或其他合理方式告知。</p>
+
+  <h2>十、联系我们</h2>
+  <p>如对本政策有疑问或投诉，请联系：</p>
+  <div class="contact">
+    <p>运营主体：上海视界象限科技有限公司</p>
+    <p>联系邮箱：<a href="mailto:3915849@163.com">3915849@163.com</a></p>
+  </div>
+
+  <footer>
+    © 2026 上海视界象限科技有限公司 · Mola相机
+  </footer>
+</div>
+</body>
+</html>
