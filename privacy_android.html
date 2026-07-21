@@ -53,6 +53,13 @@
   h3{font-size:16px; margin:18px 0 6px; color:#2a2722; font-weight:600;}
   p{margin:12px 0;}
   .content strong{color:var(--ink);}
+  /* 个人敏感信息突出明示：加粗 + 醒目红色 + 增大字号（满足审核指南 7.2 / GB/T 35273-2020 附录B） */
+  .sensitive{color:#c62828; font-weight:700; font-size:1.05em;}
+  .notice{
+    background:#fef4f4; border:1px solid #f3c8c8; border-left:4px solid #c62828;
+    border-radius:14px; padding:16px 22px; margin:18px 0;
+  }
+  .notice .notice-title{color:#c62828; font-weight:700; font-size:16px; margin:0 0 8px;}
   ul{margin:10px 0; padding-left:22px;}
   li{margin:7px 0;}
   .contact{background:#fbf6ec; border:1px solid var(--line); border-radius:14px; padding:16px 22px; margin-top:14px;}
@@ -96,6 +103,14 @@
       <h2>隐私政策</h2>
       <p>欢迎使用 Mola相机。本应用由 <strong>上海视界象限科技有限公司</strong>（以下简称"我们"）开发与运营。我们重视您的隐私与安全。本政策说明我们如何收集、使用、存储与共享与您相关的信息。使用本应用即表示您理解并同意本政策；若您不同意，请停止使用本应用。</p>
 
+      <div class="notice">
+        <p class="notice-title">【特别提示：我们处理的个人敏感信息】</p>
+        <p>为实现拍摄、登录、支付与故障排查等功能，本应用及所接入的第三方 SDK 会处理以下个人敏感信息，特向您突出明示：</p>
+        <p><span class="sensitive">（1）设备标识信息：设备 MAC 地址、设备序列号、IMEI、Android ID、OAID 等设备识别码；</span></p>
+        <p><span class="sensitive">（2）照片与图像信息：您拍摄或选择用于处理、保存、AI 分析的照片，及其中可能包含的人物图像。</span></p>
+        <p>上述敏感信息的收集目的、收集方式与对应的第三方 SDK 明细，详见本政策第二、四、五节。除实现相应功能所必需外，我们不会收集与功能无关的敏感信息，也不会将其用于用户画像或广告推送。</p>
+      </div>
+
       <h2>一、当前账号与社区功能状态</h2>
       <p>本应用提供微信授权登录，用于开通会员、记录 AI 使用额度等账号相关功能。除此之外，本应用不提供手机号登录、广场/社区发布、评论、关注或公开个人主页功能。我们不会要求您提供手机号用于登录，也不会在应用内运营向其他用户公开展示您照片或文字的社区功能。您可随时在「我的」页面注销账号，详见下文「九、您的权利」。</p>
 
@@ -107,7 +122,7 @@
       </ul>
       <h3>2. 设备与日志信息</h3>
       <ul>
-        <li>为保障服务质量、账号安全、支付风控与故障排查，我们及所接入的第三方 SDK 可能收集以下设备相关信息：设备标识信息（如设备 MAC 地址、设备序列号、Android ID、OAID 等设备识别码）、设备型号、操作系统版本、设备设置、崩溃与运行日志等。</li>
+        <li>为保障服务质量、账号安全、支付风控与故障排查，我们及所接入的第三方 SDK 可能收集以下设备相关信息：<span class="sensitive">设备标识信息（如设备 MAC 地址、设备序列号、IMEI、Android ID、OAID 等设备识别码）</span>、设备型号、操作系统版本、设备设置、崩溃与运行日志等。</li>
         <li>为完成微信/支付宝登录、分享与支付功能，相关支付与开放平台 SDK 可能检测您设备中是否已安装对应应用（读取本应用相关的已安装应用信息），用于判断能否唤起微信/支付宝完成支付或分享。</li>
         <li>上述信息不包含您的通讯录、短信内容或通话记录。设备标识与已安装应用检测信息主要由第三方 SDK 在其功能范围内收集与使用，详见下文「第三方 SDK 目录」。</li>
       </ul>
@@ -119,7 +134,7 @@
       </ul>
       <h3>4. 应用内购买</h3>
       <ul>
-        <li>若开通会员等应用内购买，支付将通过应用内支付渠道（如支付宝、微信支付）完成；我们不会接收或存储您的完整银行卡号。为完成支付与风控，支付渠道 SDK 可能收集设备标识、MAC 地址、设备序列号及已安装应用信息，详见下文「第三方 SDK 目录」。</li>
+        <li>若开通会员等应用内购买，支付将通过应用内支付渠道（如支付宝、微信支付）完成；我们不会接收或存储您的完整银行卡号。为完成支付与风控，支付渠道 SDK 可能收集<span class="sensitive">设备标识、MAC 地址、设备序列号</span>及已安装应用信息，详见下文「第三方 SDK 目录」。</li>
       </ul>
 
       <h2>三、人脸数据（Face Data）</h2>
@@ -195,6 +210,14 @@
       <h2>Privacy Policy</h2>
       <p>Welcome to Mola Cam. This app is developed and operated by <strong>Shanghai Vision Quadrant Technology Co., Ltd.</strong> ("we", "us", or "our"). We take your privacy and security seriously. This policy explains how we collect, use, store, and share information related to you. By using this app, you acknowledge and agree to this policy; if you do not agree, please stop using the app.</p>
 
+      <div class="notice">
+        <p class="notice-title">[Special Notice: Sensitive Personal Information We Process]</p>
+        <p>To provide shooting, login, payment, and troubleshooting features, this app and the third-party SDKs it integrates process the following sensitive personal information, which we prominently disclose to you:</p>
+        <p><span class="sensitive">(1) Device identifiers: device MAC address, device serial number, IMEI, Android ID, OAID and similar device identifiers;</span></p>
+        <p><span class="sensitive">(2) Photos and image information: photos you capture or select for processing, saving, or AI analysis, and any people depicted in them.</span></p>
+        <p>The purpose and method of collecting the above sensitive information, and the corresponding third-party SDKs, are detailed in Sections 2, 4, and 5. Except as necessary to provide the relevant features, we do not collect sensitive information unrelated to those features, nor do we use it for user profiling or ad targeting.</p>
+      </div>
+
       <h2>1. Current Account & Community Feature Status</h2>
       <p>This app provides WeChat-authorized login, used for account-related features such as enabling membership and tracking AI usage quota. Apart from this, the app does not provide phone-number login, plaza/community posting, comments, following, or public personal profiles. We do not ask for your phone number to log in, nor do we operate any community feature that publicly displays your photos or text to other users. You may delete your account at any time on the "Me" page; see "9. Your Rights" below.</p>
 
@@ -206,7 +229,7 @@
       </ul>
       <h3>2. Device & logs</h3>
       <ul>
-        <li>To ensure service quality, account security, payment risk control, and troubleshooting, we and the third-party SDKs we integrate may collect the following device-related information: device identifiers (such as device MAC address, device serial number, Android ID, OAID and similar identifiers), device model, operating system version, device settings, and crash/runtime logs.</li>
+        <li>To ensure service quality, account security, payment risk control, and troubleshooting, we and the third-party SDKs we integrate may collect the following device-related information: <span class="sensitive">device identifiers (such as device MAC address, device serial number, IMEI, Android ID, OAID and similar identifiers)</span>, device model, operating system version, device settings, and crash/runtime logs.</li>
         <li>To complete WeChat/Alipay login, sharing, and payment, the relevant payment and open-platform SDKs may detect whether the corresponding app is installed on your device (reading installed-app information relevant to this app), in order to determine whether WeChat/Alipay can be invoked to complete payment or sharing.</li>
         <li>The above does not include your contacts, SMS content, or call records. Device identifiers and installed-app detection are mainly collected and used by third-party SDKs within the scope of their functions; see the "Third-Party SDK Directory" below.</li>
       </ul>
@@ -218,7 +241,7 @@
       </ul>
       <h3>4. In-app purchases</h3>
       <ul>
-        <li>If membership or other in-app purchases are enabled, payment will be completed through in-app payment channels (such as Alipay or WeChat Pay); we do not receive or store your full bank card number. To complete payment and risk control, payment-channel SDKs may collect device identifiers, MAC address, device serial number, and installed-app information; see the "Third-Party SDK Directory" below.</li>
+        <li>If membership or other in-app purchases are enabled, payment will be completed through in-app payment channels (such as Alipay or WeChat Pay); we do not receive or store your full bank card number. To complete payment and risk control, payment-channel SDKs may collect <span class="sensitive">device identifiers, MAC address, device serial number</span>, and installed-app information; see the "Third-Party SDK Directory" below.</li>
       </ul>
 
       <h2>3. Face Data</h2>
