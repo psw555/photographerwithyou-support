@@ -107,13 +107,14 @@
         <p class="notice-title">【特别提示：我们处理的个人敏感信息】</p>
         <p>为实现拍摄、登录、支付与故障排查等功能，本应用及所接入的第三方 SDK 会处理以下个人敏感信息，特向您突出明示：</p>
         <p><span class="sensitive">（1）设备标识信息：本应用自身仅收集 Android ID（系统提供的应用级设备标识）。目的单一——为「每日免费 AI 体验次数」按设备计数，防止通过注销后重新注册反复领取免费额度。方式：仅在您同意本政策之后读取，并随会员/额度接口上报至我们自己的服务器；在您同意本政策之前，我们不读取、不生成、不上报任何设备标识。范围：本应用自身不收集 IMEI、IMSI、MAC 地址、设备序列号、OAID。当您使用微信/支付宝登录或支付时，相应第三方 SDK 可能在其自身功能范围内收集设备识别码，该收集由 SDK 提供方独立进行，明细见第五节。</span></p>
-        <p><span class="sensitive">（2）照片与图像信息：您拍摄或选择用于处理、保存、AI 分析的照片，及其中可能包含的人物图像。</span></p>
-        <p><span class="sensitive">（3）位置信息（可选）：仅在您主动开启「保存地理位置」并授予定位权限后，拍照时读取的设备粗略/精确位置（GPS/网络定位），仅写入照片本地 EXIF 信息，不上传至服务器或第三方。</span></p>
+        <p><span class="sensitive">（2）手机号码：您在使用手机号备用登录方式时填写的本人手机号，用于创建并登录账号、接收短信验证码；</span></p>
+        <p><span class="sensitive">（3）照片与图像信息：您拍摄或选择用于处理、保存、AI 分析的照片，及其中可能包含的人物图像。</span></p>
+        <p><span class="sensitive">（4）位置信息（可选）：仅在您主动开启「保存地理位置」并授予定位权限后，拍照时读取的设备粗略/精确位置（GPS/网络定位），仅写入照片本地 EXIF 信息，不上传至服务器或第三方。</span></p>
         <p>上述敏感信息的收集目的、收集方式与对应的第三方 SDK 明细，详见本政策第二、四、五节。除实现相应功能所必需外，我们不会收集与功能无关的敏感信息，也不会将其用于用户画像或广告推送。</p>
       </div>
 
       <h2>一、当前账号与社区功能状态</h2>
-      <p>本应用提供微信授权登录，用于开通会员、记录 AI 使用额度等账号相关功能。除此之外，本应用不提供手机号登录、广场/社区发布、评论、关注或公开个人主页功能。我们不会要求您提供手机号用于登录，也不会在应用内运营向其他用户公开展示您照片或文字的社区功能。您可随时在「我的」页面注销账号，详见下文「九、您的权利」。</p>
+      <p>本应用提供微信授权登录，用于开通会员、记录 AI 使用额度等账号相关功能。当微信授权因微信端签名校验等原因无法完成时，我们会在您确认后提供「手机号 + 短信验证码」作为备用登录方式；此时您需要填写本人手机号并接收短信验证码，未注册的手机号在首次验证通过后将自动创建账号（以您的手机号作为账号标识）。您也可以选择不使用备用方式、放弃登录。除登录所需外，本应用不提供广场/社区发布、评论、关注或公开个人主页功能，也不会在应用内运营向其他用户公开展示您照片或文字的社区功能。您可随时在「我的」页面注销账号，详见下文「九、您的权利」。</p>
 
       <h2>二、我们收集哪些信息</h2>
       <h3>1. 您在使用中产生的内容</h3>
@@ -121,7 +122,12 @@
         <li>照片：您通过相机拍摄或选择用于处理或保存的内容。</li>
         <li>文本：您输入的拍摄意图、AI 提示词及其他您主动输入的文字。</li>
       </ul>
-      <h3>2. 设备与日志信息</h3>
+      <h3>2. 账号与登录信息</h3>
+      <ul>
+        <li>为提供登录与会员服务，我们会收集您在使用手机号备用登录方式时填写的<span class="sensitive">手机号码</span>，并向该号码发送短信验证码用于验证。手机号将作为您的账号标识，用于记录会员状态与 AI 使用额度。若您始终使用微信登录，我们不会收集您的手机号。</li>
+        <li>短信验证码由我们的服务器通过第三方短信服务（阿里云短信）代为下发，详见下文「五、第三方 SDK 目录」。我们不会读取您设备通讯录中的其他号码，也不会将您的手机号用于与登录、会员无关的营销或推送。</li>
+      </ul>
+      <h3>3. 设备与日志信息</h3>
       <ul>
         <li><strong>本应用自身收集的设备标识仅有 Android ID 一项</strong>，用于「每日免费 AI 体验次数」的按设备计数（防止注销后重新注册反复领取），随会员/额度接口上报至我们自己的服务器。<span class="sensitive">该读取与上报均发生在您同意本政策之后；在您点击「同意」之前，本应用不读取、不生成、不上报任何设备标识，也不发起任何网络请求。</span></li>
         <li>我们还会收集设备型号、操作系统版本、崩溃与运行日志，用于故障排查与兼容性适配；这些不含唯一设备标识。</li>
@@ -130,19 +136,19 @@
         <li>为完成微信/支付宝登录、分享与支付功能，相关支付与开放平台 SDK 可能检测您设备中是否已安装对应应用（读取本应用相关的已安装应用信息），用于判断能否唤起微信/支付宝完成支付或分享。<strong>该检测仅在您主动发起登录/支付/分享操作时进行，本应用不获取您设备上的完整应用列表。</strong></li>
         <li>上述信息不包含您的通讯录、短信内容或通话记录。</li>
       </ul>
-      <h3>3. 传感器信息</h3>
+      <h3>4. 传感器信息</h3>
       <ul>
         <li>为实现取景时的「水平仪」辅助线（提示画面是否水平），我们会读取设备加速度传感器（重力/加速度）数据，实时计算设备的倾斜（滚转）角度。</li>
         <li>收集方式：通过系统传感器接口实时读取，仅在您使用相机取景界面时读取，退出即停止。</li>
         <li>使用范围：该数据仅在您的设备本地内存中用于绘制水平参考线，不会被存储、不会上传至我们的服务器或任何第三方，也不用于识别您的身份或任何其他用途。</li>
       </ul>
-      <h3>4. 位置信息</h3>
+      <h3>5. 位置信息</h3>
       <ul>
         <li>仅当您在设置中主动开启「保存地理位置」开关，并授予定位权限后，我们才会在您拍照时读取一次设备的粗略/精确位置（GPS/网络定位），并将该坐标写入所拍照片的 EXIF 信息中，随照片一起保存在您的设备相册里。</li>
         <li>收集方式：通过系统定位接口获取最近一次已知位置，仅在按下快门保存照片的瞬间读取；关闭开关或不授予权限时不读取、不写入。</li>
         <li>使用范围：位置仅用于记录照片的拍摄地点，写入照片本地文件，不会上传至我们的服务器或任何第三方，也不用于识别您的身份、用户画像或广告推送。您可随时在设置中关闭该开关，或在系统设置中收回定位权限。</li>
       </ul>
-      <h3>5. 应用内购买</h3>
+      <h3>6. 应用内购买</h3>
       <ul>
         <li>若开通会员等应用内购买，支付将通过应用内支付渠道（如支付宝、微信支付）完成；我们不会接收或存储您的完整银行卡号。为完成支付与风控，支付渠道 SDK 可能收集<span class="sensitive">设备标识、MAC 地址、设备序列号</span>及已安装应用信息，详见下文「第三方 SDK 目录」。</li>
       </ul>
@@ -163,7 +169,7 @@
       <p>服务方对传输数据的具体处理方式可能随其官方规则更新而变化，请查阅其最新公示文件。</p>
 
       <h2>五、第三方 SDK 目录</h2>
-      <p>为实现登录、分享、支付等功能，本应用接入了以下第三方 SDK。这些 SDK 可能在其功能所需范围内收集、使用您的个人信息。SDK 的具体信息处理规则以其官方公示为准。</p>
+      <p>为实现登录、分享、支付、短信验证码等功能，本应用接入了以下第三方 SDK 或第三方服务。它们可能在功能所需范围内收集、使用您的个人信息，具体信息处理规则以其官方公示为准。</p>
       <h3>1. 微信OpenSDK Android</h3>
       <ul>
         <li>SDK 名称：微信OpenSDK Android</li>
@@ -181,6 +187,14 @@
         <li>收集的个人信息：设备标识信息（如设备 MAC 地址、设备序列号、IMEI、Android ID、OAID 等）、设备型号与系统信息、网络信息，以及是否已安装支付宝应用的检测信息，用于支付安全与风险控制。</li>
         <li>调用时机：<strong>仅在您主动发起支付宝支付时初始化并调用；应用启动阶段及您同意本政策之前均不初始化、不收集任何信息。</strong></li>
         <li>SDK 隐私政策链接：<a class="mail" href="https://opendocs.alipay.com/open/54/01g6qm">https://opendocs.alipay.com/open/54/01g6qm</a></li>
+      </ul>
+      <h3>3. 阿里云短信服务</h3>
+      <ul>
+        <li>服务名称：阿里云短信服务（Short Message Service）</li>
+        <li>提供方：阿里云计算有限公司</li>
+        <li>使用目的：您使用手机号备用登录方式时，由我们的服务器调用该服务向您的手机号发送短信验证码，用于验证手机号并完成登录。</li>
+        <li>处理的个人信息：<span class="sensitive">您的手机号码</span>（用于接收验证码）。该处理由我们的服务器发起，短信由阿里云代为下发；App 端不直接集成该短信 SDK。</li>
+        <li>隐私政策链接：<a class="mail" href="https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201907151805_54276.html">阿里云隐私权政策</a></li>
       </ul>
       <p>上述第三方 SDK 收集的信息主要用于实现相应功能与保障交易安全，我们不会将其用于与该功能无关的目的。若您不使用登录、分享或支付功能，相关 SDK 通常不会收集上述信息。</p>
 
@@ -205,7 +219,7 @@
 
       <h2>九、您的权利</h2>
       <p>在适用法律允许的范围内，您可请求访问、更正、删除与您使用本应用相关的信息，或限制某些处理。</p>
-      <p>账号注销：本应用支持微信授权登录形成账号（用于会员开通、AI 使用额度等）。您可随时在「我的」页面点击「注销账号」主动注销。注销后，我们将删除该账号在服务端的会员状态、AI 使用额度等相关数据，并清除本应用在您设备上的登录态与本地缓存。账号注销不可恢复，请谨慎操作；注销后如需继续使用相关账号功能，需重新登录形成新账号。您在设备本地相册中已保存的照片不受影响，可自行管理。</p>
+      <p>账号注销：本应用支持微信授权登录（微信不可用时可改用手机号 + 短信验证码）形成账号（用于会员开通、AI 使用额度等）。您可随时在「我的」页面点击「注销账号」主动注销。注销后，我们将删除该账号在服务端的会员状态、AI 使用额度等相关数据，并清除本应用在您设备上的登录态与本地缓存。账号注销不可恢复，请谨慎操作；注销后如需继续使用相关账号功能，需重新登录形成新账号。您在设备本地相册中已保存的照片不受影响，可自行管理。</p>
 
       <h2>十、政策变更</h2>
       <p>我们可能适时修订本政策，并在本应用内更新展示内容及生效日期。重大变更时，我们将通过应用内提示或其他合理方式告知。</p>
@@ -227,12 +241,14 @@
         <p class="notice-title">[Special Notice: Sensitive Personal Information We Process]</p>
         <p>To provide shooting, login, payment, and troubleshooting features, this app and the third-party SDKs it integrates process the following sensitive personal information, which we prominently disclose to you:</p>
         <p><span class="sensitive">(1) Device identifiers: This app itself collects only the Android ID (an app-scoped identifier provided by the system). Purpose: solely to count the daily free AI trial quota per device, preventing users from repeatedly claiming the free quota by deleting and re-registering an account. Method: read only after you agree to this Policy, and reported to our own server together with the membership/quota requests; before you agree, we do not read, generate or report any device identifier. Scope: this app itself does not collect IMEI, IMSI, MAC address, device serial number, or OAID. When you use WeChat/Alipay login or payment, the corresponding third-party SDK may collect device identifiers within the scope of its own functions, acting as an independent processor; see Section V.</span></p>
-        <p><span class="sensitive">(2) Photos and image information: photos you capture or select for processing, saving, or AI analysis, and any people depicted in them.</span></p>
+        <p><span class="sensitive">(2) Mobile phone number: the phone number you enter when using the phone-number fallback login method, used to create and log in to your account and to receive the SMS verification code;</span></p>
+        <p><span class="sensitive">(3) Photos and image information: photos you capture or select for processing, saving, or AI analysis, and any people depicted in them.</span></p>
+        <p><span class="sensitive">(4) Location information (optional): only after you actively enable "Save location" and grant location permission, the device's coarse/precise location (GPS/network) read when you take a photo; it is written only into the photo's local EXIF data and is not uploaded to our server or any third party.</span></p>
         <p>The purpose and method of collecting the above sensitive information, and the corresponding third-party SDKs, are detailed in Sections 2, 4, and 5. Except as necessary to provide the relevant features, we do not collect sensitive information unrelated to those features, nor do we use it for user profiling or ad targeting.</p>
       </div>
 
       <h2>1. Current Account & Community Feature Status</h2>
-      <p>This app provides WeChat-authorized login, used for account-related features such as enabling membership and tracking AI usage quota. Apart from this, the app does not provide phone-number login, plaza/community posting, comments, following, or public personal profiles. We do not ask for your phone number to log in, nor do we operate any community feature that publicly displays your photos or text to other users. You may delete your account at any time on the "Me" page; see "9. Your Rights" below.</p>
+      <p>This app provides WeChat-authorized login, used for account-related features such as enabling membership and tracking AI usage quota. If WeChat authorization cannot be completed (for example, because of WeChat-side signature verification), we will, after your confirmation, offer login via "mobile phone number + SMS verification code" as a fallback method; in that case you enter your own phone number and receive an SMS verification code, and an unregistered phone number automatically creates an account upon its first successful verification (your phone number serves as the account identifier). You may also decline the fallback method and skip logging in. Apart from what login requires, the app does not provide plaza/community posting, comments, following, or public personal profiles, nor does it operate any community feature that publicly displays your photos or text to other users. You may delete your account at any time on the "Me" page; see "9. Your Rights" below.</p>
 
       <h2>2. Information We Collect</h2>
       <h3>1. Content you generate while using the app</h3>
@@ -240,7 +256,12 @@
         <li>Photos: content you capture with the camera or select for processing or saving.</li>
         <li>Text: shooting intentions you enter, AI prompts, and other text you actively input.</li>
       </ul>
-      <h3>2. Device & logs</h3>
+      <h3>2. Account &amp; login information</h3>
+      <ul>
+        <li>To provide login and membership services, we collect the <span class="sensitive">mobile phone number</span> you enter when using the phone-number fallback login method, and send an SMS verification code to that number for verification. Your phone number serves as your account identifier, used to record membership status and AI usage quota. If you always log in with WeChat, we do not collect your phone number.</li>
+        <li>The SMS verification code is sent on our behalf by our server through a third-party SMS service (Alibaba Cloud SMS); see "5. Third-Party SDK Directory" below. We do not read other numbers in your device's contacts, nor do we use your phone number for marketing or push unrelated to login or membership.</li>
+      </ul>
+      <h3>3. Device & logs</h3>
       <ul>
         <li><strong>The only device identifier collected by this app itself is the Android ID</strong>, used solely to count the daily free AI trial quota per device (to prevent repeatedly claiming the free quota by deleting and re-registering an account). It is reported to our own server together with the membership/quota requests. <span class="sensitive">This reading and reporting occur only after you agree to this Policy; before you tap "Agree", this app does not read, generate or report any device identifier, and makes no network request.</span></li>
         <li>We also collect device model, operating system version, and crash/runtime logs for troubleshooting and compatibility; these contain no unique device identifier.</li>
@@ -249,19 +270,19 @@
         <li>To complete WeChat/Alipay login, sharing and payment, the relevant payment and open-platform SDKs may detect whether the corresponding app is installed on your device (reading installed-app information relevant to this app), in order to determine whether WeChat/Alipay can be invoked to complete payment or sharing. <strong>This detection occurs only when you actively initiate login/payment/sharing; this app does not obtain the full list of apps installed on your device.</strong></li>
         <li>The above does not include your contacts, SMS content, or call records.</li>
       </ul>
-      <h3>3. Sensor information</h3>
+      <h3>4. Sensor information</h3>
       <ul>
         <li>To provide the "level" guide line while framing a shot (indicating whether the frame is horizontal), we read the device's accelerometer (gravity/acceleration) data to compute the device's tilt (roll) angle in real time.</li>
         <li>How it is collected: read in real time via the system sensor interface, only while you are using the camera framing screen; it stops as soon as you leave.</li>
         <li>Scope of use: this data is used solely in your device's local memory to draw the level reference line. It is not stored, not uploaded to our servers or any third party, and not used to identify you or for any other purpose.</li>
       </ul>
-      <h3>4. Location information</h3>
+      <h3>5. Location information</h3>
       <ul>
         <li>Only if you actively enable the "Save location" switch in Settings and grant location permission will we read your device's coarse/fine location (GPS/network positioning) once when you take a photo, and write those coordinates into the photo's EXIF metadata, saved together with the photo in your device gallery.</li>
         <li>How it is collected: obtained via the system location interface as the last known location, read only at the moment you press the shutter to save a photo; nothing is read or written when the switch is off or permission is not granted.</li>
         <li>Scope of use: the location is used only to record where the photo was taken, written into the local photo file. It is not uploaded to our servers or any third party, and not used to identify you, for user profiling, or for advertising. You can turn off the switch in Settings at any time, or revoke location permission in system settings.</li>
       </ul>
-      <h3>5. In-app purchases</h3>
+      <h3>6. In-app purchases</h3>
       <ul>
         <li>If membership or other in-app purchases are enabled, payment will be completed through in-app payment channels (such as Alipay or WeChat Pay); we do not receive or store your full bank card number. To complete payment and risk control, payment-channel SDKs may collect <span class="sensitive">device identifiers, MAC address, device serial number</span>, and installed-app information; see the "Third-Party SDK Directory" below.</li>
       </ul>
@@ -282,7 +303,7 @@
       <p>The way service providers handle transmitted data may change as their official rules are updated; please refer to their latest published documents.</p>
 
       <h2>5. Third-Party SDK Directory</h2>
-      <p>To enable login, sharing, and payment, this app integrates the following third-party SDKs. They may collect and use your personal information within the scope required for their functions; the specific data-processing rules are governed by their official disclosures.</p>
+      <p>To enable login, sharing, payment, and SMS verification codes, this app integrates the following third-party SDKs or third-party services. They may collect and use your personal information within the scope required for their functions; the specific data-processing rules are governed by their official disclosures.</p>
       <h3>1. WeChat OpenSDK Android</h3>
       <ul>
         <li>SDK name: 微信OpenSDK Android (WeChat OpenSDK Android)</li>
@@ -298,6 +319,14 @@
         <li>Purpose: Alipay payment and transaction risk control.</li>
         <li>Personal information collected: device identifiers (such as device MAC address, device serial number, IMEI, Android ID, OAID), device model and system information, network information, and detection of whether the Alipay app is installed, used for payment security and risk control.</li>
         <li>SDK privacy policy: <a class="mail" href="https://opendocs.alipay.com/open/54/01g6qm">https://opendocs.alipay.com/open/54/01g6qm</a></li>
+      </ul>
+      <h3>3. Alibaba Cloud SMS Service</h3>
+      <ul>
+        <li>Service name: Alibaba Cloud Short Message Service (SMS)</li>
+        <li>Provider: Alibaba Cloud Computing Co., Ltd.</li>
+        <li>Purpose: when you use the phone-number fallback login method, our server calls this service to send an SMS verification code to your phone number, in order to verify the number and complete login.</li>
+        <li>Personal information processed: <span class="sensitive">your mobile phone number</span> (to receive the verification code). The processing is initiated by our server and the message is delivered by Alibaba Cloud on our behalf; the app itself does not integrate this SMS SDK.</li>
+        <li>Privacy policy: <a class="mail" href="https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201907151805_54276.html">Alibaba Cloud Privacy Policy</a></li>
       </ul>
       <p>Information collected by the above third-party SDKs is used mainly to implement the corresponding features and safeguard transaction security; we do not use it for purposes unrelated to those features. If you do not use login, sharing, or payment features, these SDKs generally do not collect the above information.</p>
 
@@ -322,7 +351,7 @@
 
       <h2>9. Your Rights</h2>
       <p>To the extent permitted by applicable law, you may request to access, correct, or delete information related to your use of this app, or restrict certain processing.</p>
-      <p>Account deletion: This app supports WeChat-authorized login to form an account (used for membership and AI usage quota, etc.). You may delete your account at any time by tapping "Delete Account" on the "Me" page. After deletion, we will delete the account's server-side data such as membership status and AI usage quota, and clear this app's login state and local cache on your device. Account deletion is irreversible, so please proceed with caution; if you wish to use account-related features again afterwards, you will need to log in again to create a new account. Photos already saved in your device's local album are not affected and can be managed by you.</p>
+      <p>Account deletion: This app supports WeChat-authorized login (with mobile phone number + SMS verification code as a fallback when WeChat is unavailable) to form an account (used for membership and AI usage quota, etc.). You may delete your account at any time by tapping "Delete Account" on the "Me" page. After deletion, we will delete the account's server-side data such as membership status and AI usage quota, and clear this app's login state and local cache on your device. Account deletion is irreversible, so please proceed with caution; if you wish to use account-related features again afterwards, you will need to log in again to create a new account. Photos already saved in your device's local album are not affected and can be managed by you.</p>
 
       <h2>10. Changes to This Policy</h2>
       <p>We may revise this policy from time to time and update the displayed content and effective date within the app. For material changes, we will notify you via in-app notice or other reasonable means.</p>
