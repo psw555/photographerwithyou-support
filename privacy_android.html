@@ -240,15 +240,15 @@
       <div class="notice">
         <p class="notice-title">[Special Notice: Sensitive Personal Information We Process]</p>
         <p>To provide shooting, login, payment, and troubleshooting features, this app and the third-party SDKs it integrates process the following sensitive personal information, which we prominently disclose to you:</p>
-        <p><span class="sensitive">(1) Device identifiers: This app itself collects only the Android ID (an app-scoped identifier provided by the system). Purpose: solely to count the daily free AI trial quota per device, preventing users from repeatedly claiming the free quota by deleting and re-registering an account. Method: read only after you agree to this Policy, and reported to our own server together with the membership/quota requests; before you agree, we do not read, generate or report any device identifier. Scope: this app itself does not collect IMEI, IMSI, MAC address, device serial number, or OAID. When you use WeChat/Alipay login or payment, the corresponding third-party SDK may collect device identifiers within the scope of its own functions, acting as an independent processor; see Section V.</span></p>
-        <p><span class="sensitive">(2) Mobile phone number: the phone number you enter when using the phone-number fallback login method, used to create and log in to your account and to receive the SMS verification code;</span></p>
+        <p><span class="sensitive">(1) Device identifiers: This app itself collects only the Android ID (an app-scoped identifier provided by the system). Purpose: solely to count the daily free AI trial quota per device, preventing users from repeatedly claiming the free quota by deleting and re-registering an account. Method: read only after you agree to this Policy, and reported to our own server together with the membership/quota requests; before you agree, we do not read, generate or report any device identifier. Scope: this app itself does not collect IMEI, IMSI, MAC address, device serial number, or OAID. When you make a purchase, the transaction is processed by Google Play's billing service, which handles the related payment and device data as an independent processor; see Section V.</span></p>
+        <p><span class="sensitive">(2) Google account information: when you sign in with Google, we receive your Google account's email address and user ID, used to create and identify your account;</span></p>
         <p><span class="sensitive">(3) Photos and image information: photos you capture or select for processing, saving, or AI analysis, and any people depicted in them.</span></p>
         <p><span class="sensitive">(4) Location information (optional): only after you actively enable "Save location" and grant location permission, the device's coarse/precise location (GPS/network) read when you take a photo; it is written only into the photo's local EXIF data and is not uploaded to our server or any third party.</span></p>
         <p>The purpose and method of collecting the above sensitive information, and the corresponding third-party SDKs, are detailed in Sections 2, 4, and 5. Except as necessary to provide the relevant features, we do not collect sensitive information unrelated to those features, nor do we use it for user profiling or ad targeting.</p>
       </div>
 
       <h2>1. Current Account & Community Feature Status</h2>
-      <p>This app provides WeChat-authorized login, used for account-related features such as enabling membership and tracking AI usage quota. If WeChat authorization cannot be completed (for example, because of WeChat-side signature verification), we will, after your confirmation, offer login via "mobile phone number + SMS verification code" as a fallback method; in that case you enter your own phone number and receive an SMS verification code, and an unregistered phone number automatically creates an account upon its first successful verification (your phone number serves as the account identifier). You may also decline the fallback method and skip logging in. Apart from what login requires, the app does not provide plaza/community posting, comments, following, or public personal profiles, nor does it operate any community feature that publicly displays your photos or text to other users. You may delete your account at any time on the "Me" page; see "9. Your Rights" below.</p>
+      <p>This app provides sign-in with your Google account (Google Sign-In), used for account-related features such as enabling membership and tracking AI usage quota. When you sign in, we receive your Google account's email address and user ID, which serve as your account identifier. You may also choose not to sign in and skip account features. Apart from what sign-in requires, the app does not provide plaza/community posting, comments, following, or public personal profiles, nor does it operate any community feature that publicly displays your photos or text to other users. You may delete your account at any time on the "Me" page; see "9. Your Rights" below.</p>
 
       <h2>2. Information We Collect</h2>
       <h3>1. Content you generate while using the app</h3>
@@ -258,16 +258,15 @@
       </ul>
       <h3>2. Account &amp; login information</h3>
       <ul>
-        <li>To provide login and membership services, we collect the <span class="sensitive">mobile phone number</span> you enter when using the phone-number fallback login method, and send an SMS verification code to that number for verification. Your phone number serves as your account identifier, used to record membership status and AI usage quota. If you always log in with WeChat, we do not collect your phone number.</li>
-        <li>The SMS verification code is sent on our behalf by our server through a third-party SMS service (Alibaba Cloud SMS); see "5. Third-Party SDK Directory" below. We do not read other numbers in your device's contacts, nor do we use your phone number for marketing or push unrelated to login or membership.</li>
+        <li>To provide sign-in and membership services, we use <span class="sensitive">Google Sign-In</span>. When you sign in, we receive your Google account's email address and user ID, which serve as your account identifier, used to record membership status and AI usage quota.</li>
+        <li>We do not collect your phone number, and we do not send SMS messages. We do not use your account information for marketing or push unrelated to sign-in or membership.</li>
       </ul>
       <h3>3. Device & logs</h3>
       <ul>
         <li><strong>The only device identifier collected by this app itself is the Android ID</strong>, used solely to count the daily free AI trial quota per device (to prevent repeatedly claiming the free quota by deleting and re-registering an account). It is reported to our own server together with the membership/quota requests. <span class="sensitive">This reading and reporting occur only after you agree to this Policy; before you tap "Agree", this app does not read, generate or report any device identifier, and makes no network request.</span></li>
         <li>We also collect device model, operating system version, and crash/runtime logs for troubleshooting and compatibility; these contain no unique device identifier.</li>
         <li><strong>Crash &amp; failure diagnostics:</strong> When this app crashes, or when a clear feature failure occurs (for example, camera initialization fails and tapping the shutter shows "Camera not ready"), a diagnostic record is generated locally on your device, containing: the exception stack trace and the code location of the error, device brand and model, operating system version, this app's version number, memory usage at that moment, and your in-app feature settings at that moment (such as the selected resolution tier, and whether Live Photo / light-trail shutter / a photo frame style were enabled). The record is uploaded to <strong>our own server</strong> (for crashes, the next time you launch the app), and the local file is deleted as soon as the upload succeeds; if the upload fails, it is kept and retried on subsequent launches. <span class="sensitive">The record contains no photo content, account information, phone number or location data, and no unique device identifier.</span> It is used solely to locate and fix crashes and feature failures, not for user profiling or advertising, and is not shared with any third party.</li>
-        <li><strong>This app itself does not collect</strong> IMEI, IMSI, MAC address, device serial number, or OAID. When you use WeChat/Alipay login or payment, the corresponding third-party SDK may collect device identifiers within the scope of its own functions (for payment security and risk control), acting as an independent processor; see the "Third-Party SDK Directory" below.</li>
-        <li>To complete WeChat/Alipay login, sharing and payment, the relevant payment and open-platform SDKs may detect whether the corresponding app is installed on your device (reading installed-app information relevant to this app), in order to determine whether WeChat/Alipay can be invoked to complete payment or sharing. <strong>This detection occurs only when you actively initiate login/payment/sharing; this app does not obtain the full list of apps installed on your device.</strong></li>
+        <li><strong>This app itself does not collect</strong> IMEI, IMSI, MAC address, device serial number, or OAID. When you make a purchase, Google Play's billing service may process device and transaction data within the scope of its own functions (for payment security and risk control), acting as an independent processor; see the "Third-Party SDK Directory" below.</li>
         <li>The above does not include your contacts, SMS content, or call records.</li>
       </ul>
       <h3>4. Sensor information</h3>
@@ -284,7 +283,7 @@
       </ul>
       <h3>6. In-app purchases</h3>
       <ul>
-        <li>If membership or other in-app purchases are enabled, payment will be completed through in-app payment channels (such as Alipay or WeChat Pay); we do not receive or store your full bank card number. To complete payment and risk control, payment-channel SDKs may collect <span class="sensitive">device identifiers, MAC address, device serial number</span>, and installed-app information; see the "Third-Party SDK Directory" below.</li>
+        <li>If membership or other in-app purchases are enabled, payment is completed through Google Play's in-app billing; we do not receive or store your full bank card number. To complete payment and risk control, Google Play's billing service may process <span class="sensitive">device identifiers</span> and transaction information; see the "Third-Party SDK Directory" below.</li>
       </ul>
 
       <h2>3. Face Data</h2>
@@ -303,32 +302,24 @@
       <p>The way service providers handle transmitted data may change as their official rules are updated; please refer to their latest published documents.</p>
 
       <h2>5. Third-Party SDK Directory</h2>
-      <p>To enable login, sharing, payment, and SMS verification codes, this app integrates the following third-party SDKs or third-party services. They may collect and use your personal information within the scope required for their functions; the specific data-processing rules are governed by their official disclosures.</p>
-      <h3>1. WeChat OpenSDK Android</h3>
+      <p>To enable sign-in and payment, this app integrates the following third-party SDKs or services. They may collect and use your personal information within the scope required for their functions; the specific data-processing rules are governed by their official disclosures.</p>
+      <h3>1. Google Sign-In (Google Identity Services)</h3>
       <ul>
-        <li>SDK name: 微信OpenSDK Android (WeChat OpenSDK Android)</li>
-        <li>Developer: Shenzhen Tencent Computer Systems Co., Ltd.</li>
-        <li>Purpose: WeChat login, WeChat sharing, and WeChat Pay.</li>
-        <li>Personal information collected: device identifiers (such as device MAC address, device serial number, Android ID, OAID), network status information, and detection of whether the WeChat app is installed.</li>
-        <li>SDK privacy policy: <a class="mail" href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8">https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8</a></li>
+        <li>SDK name: Google Sign-In / Google Identity Services</li>
+        <li>Developer: Google LLC</li>
+        <li>Purpose: to let you sign in with your Google account.</li>
+        <li>Personal information collected: your Google account's email address and user ID, and basic profile information you authorize.</li>
+        <li>SDK privacy policy: <a class="mail" href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
       </ul>
-      <h3>2. APP Payment Client SDK (Alipay)</h3>
+      <h3>2. Google Play Billing</h3>
       <ul>
-        <li>SDK name: APP支付客户端SDK (Alipay APP Payment Client SDK)</li>
-        <li>Developer: 支付宝(杭州)信息技术有限公司 (Alipay (Hangzhou) Information Technology Co., Ltd.)</li>
-        <li>Purpose: Alipay payment and transaction risk control.</li>
-        <li>Personal information collected: device identifiers (such as device MAC address, device serial number, IMEI, Android ID, OAID), device model and system information, network information, and detection of whether the Alipay app is installed, used for payment security and risk control.</li>
-        <li>SDK privacy policy: <a class="mail" href="https://opendocs.alipay.com/open/54/01g6qm">https://opendocs.alipay.com/open/54/01g6qm</a></li>
+        <li>SDK name: Google Play Billing Library</li>
+        <li>Developer: Google LLC</li>
+        <li>Purpose: to process in-app purchases (such as membership) and transaction risk control.</li>
+        <li>Personal information collected: purchase and transaction information, device identifiers, and related information used for payment security and risk control, processed by Google Play.</li>
+        <li>Privacy policy: <a class="mail" href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
       </ul>
-      <h3>3. Alibaba Cloud SMS Service</h3>
-      <ul>
-        <li>Service name: Alibaba Cloud Short Message Service (SMS)</li>
-        <li>Provider: Alibaba Cloud Computing Co., Ltd.</li>
-        <li>Purpose: when you use the phone-number fallback login method, our server calls this service to send an SMS verification code to your phone number, in order to verify the number and complete login.</li>
-        <li>Personal information processed: <span class="sensitive">your mobile phone number</span> (to receive the verification code). The processing is initiated by our server and the message is delivered by Alibaba Cloud on our behalf; the app itself does not integrate this SMS SDK.</li>
-        <li>Privacy policy: <a class="mail" href="https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201907151805_54276.html">Alibaba Cloud Privacy Policy</a></li>
-      </ul>
-      <p>Information collected by the above third-party SDKs is used mainly to implement the corresponding features and safeguard transaction security; we do not use it for purposes unrelated to those features. If you do not use login, sharing, or payment features, these SDKs generally do not collect the above information.</p>
+      <p>Information collected by the above third-party SDKs is used mainly to implement the corresponding features and safeguard transaction security; we do not use it for purposes unrelated to those features. If you do not use sign-in or payment features, these SDKs generally do not collect the above information.</p>
 
       <h2>6. Permissions</h2>
       <ul>
@@ -351,7 +342,7 @@
 
       <h2>9. Your Rights</h2>
       <p>To the extent permitted by applicable law, you may request to access, correct, or delete information related to your use of this app, or restrict certain processing.</p>
-      <p>Account deletion: This app supports WeChat-authorized login (with mobile phone number + SMS verification code as a fallback when WeChat is unavailable) to form an account (used for membership and AI usage quota, etc.). You may delete your account at any time by tapping "Delete Account" on the "Me" page. After deletion, we will delete the account's server-side data such as membership status and AI usage quota, and clear this app's login state and local cache on your device. Account deletion is irreversible, so please proceed with caution; if you wish to use account-related features again afterwards, you will need to log in again to create a new account. Photos already saved in your device's local album are not affected and can be managed by you.</p>
+      <p>Account deletion: This app supports sign-in with your Google account (Google Sign-In) to form an account (used for membership and AI usage quota, etc.). You may delete your account at any time by tapping "Delete Account" on the "Me" page. After deletion, we will delete the account's server-side data such as membership status and AI usage quota, and clear this app's login state and local cache on your device. Account deletion is irreversible, so please proceed with caution; if you wish to use account-related features again afterwards, you will need to sign in again to create a new account. Photos already saved in your device's local album are not affected and can be managed by you.</p>
 
       <h2>10. Changes to This Policy</h2>
       <p>We may revise this policy from time to time and update the displayed content and effective date within the app. For material changes, we will notify you via in-app notice or other reasonable means.</p>
